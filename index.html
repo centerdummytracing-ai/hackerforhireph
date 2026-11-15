@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#070b14">
+<meta name="description" content="Anonymous Philippines — Taglish digital assistance for authorized recovery, ethical security testing, OSINT and cybersecurity.">
+<title>Anonymous Philippines | Digital Assistance & Cybersecurity</title>
+<style>
+:root{--bg:#070b14;--panel:#101827;--panel2:#0b1220;--ink:#f5f7fc;--muted:#a9b5c9;--blue:#287ff0;--red:#e83d51;--gold:#f5c75e;--line:rgba(174,197,231,.16);--max:1160px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:82px}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+body:before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 10% 0%,#12366a55,transparent 36%),radial-gradient(ellipse at 95% 22%,#7e1c2b33,transparent 34%),linear-gradient(#070b14,#0b1120 60%,#070b14)}
+a{color:inherit;text-decoration:none}button,input,textarea,select{font:inherit}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}.stripe{height:4px;background:linear-gradient(90deg,#1558c6,#fff,#d6293e)}
+header{position:sticky;top:0;z-index:50;background:#080d18eF;backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.nav{height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:11px;font-weight:950;letter-spacing:.1em;font-size:13px}.brand img{width:43px;height:43px;object-fit:cover;border-radius:50%;border:1px solid #ffffff40}.brand small{display:block;color:#8fa0bb;font-size:9px;letter-spacing:.2em}
+.links{display:flex;align-items:center;gap:26px;font-size:13px;color:#c4cee0;font-weight:700}.links a:hover{color:white}.hire{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:99px;padding:12px 21px;color:white;font-weight:900;background:linear-gradient(105deg,var(--blue),#3957d8 55%,var(--red));box-shadow:0 9px 28px #1d63c944;transition:.2s}.hire:hover{transform:translateY(-2px);filter:brightness(1.12)}.menu{display:none;background:#121d30;color:white;border:1px solid var(--line);border-radius:11px;padding:8px 12px;font-size:20px}
+.hero{padding:38px 0 75px}.cover{position:relative;overflow:hidden;border:1px solid #9ab9ef44;border-radius:25px;box-shadow:0 25px 80px #0009;background:#0a1020}.cover img{display:block;width:100%;height:auto;max-height:440px;object-fit:cover;object-position:center}.cover:after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,#070b14d9);pointer-events:none}.hero-copy{max-width:850px;margin:-35px auto 0;position:relative;z-index:2;text-align:center;padding:0 22px}.pill{display:inline-flex;align-items:center;gap:8px;padding:7px 13px;border:1px solid #f5c75e55;border-radius:99px;background:#f5c75e12;color:#ffdc89;font-size:10px;font-weight:900;letter-spacing:.16em;text-transform:uppercase}.hero h1{font-size:clamp(35px,6vw,64px);line-height:1.04;letter-spacing:-.045em;margin:17px 0 12px}.grad{background:linear-gradient(95deg,#fff,#76baff 50%,#ff6978);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{color:var(--muted);max-width:720px;margin:0 auto;font-size:16px}.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:25px}.secondary{display:inline-flex;align-items:center;justify-content:center;padding:11px 20px;border:1px solid #a9c3eb55;border-radius:99px;color:#e7efff;font-weight:800;background:#ffffff08}.trust{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin-top:25px;color:#b9c5d8;font-size:12px}.trust span:before{content:"✓";color:var(--gold);font-weight:900;margin-right:7px}
+section{padding:72px 0}.head{text-align:center;max-width:730px;margin:0 auto 37px}.eyebrow{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:950}.head h2,.about h2,.contact h2{font-size:clamp(29px,4vw,43px);line-height:1.13;letter-spacing:-.035em;margin:10px 0}.head p,.about p{color:var(--muted);margin:0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:linear-gradient(145deg,#142139,#0c1423);border:1px solid var(--line);border-radius:19px;padding:23px;transition:.22s;min-height:205px}.card:hover{transform:translateY(-5px);border-color:#4e91e888;box-shadow:0 16px 40px #0006}.ico{width:44px;height:44px;border-radius:13px;display:grid;place-items:center;background:#287ff022;color:#91c5ff;font-size:22px;margin-bottom:14px}.card h3{font-size:17px;margin:0 0 7px}.card p{font-size:13px;color:var(--muted);margin:0}.chip{display:inline-block;margin-top:14px;color:#ffdc89;font-size:10px;font-weight:900;letter-spacing:.1em;text-transform:uppercase}
+.about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:40px;align-items:center}.poster{border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 20px 60px #0008}.poster img{display:block;width:100%;height:100%;object-fit:cover}.ticks{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-top:20px}.ticks div{font-size:13px;color:#dce6f7}.ticks b{color:#76baff;margin-right:7px}
+.video-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.video-card{overflow:hidden;border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,#142139,#0c1423)}.video-card video{display:block;width:100%;aspect-ratio:16/9;background:#05080e}.video-card h3{margin:0;padding:13px 16px;font-size:14px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.step{border:1px solid var(--line);border-radius:17px;padding:20px;background:#111a2a}.step small{color:var(--gold);font-weight:950;letter-spacing:.15em}.step h3{margin:8px 0 5px;font-size:15px}.step p{font-size:12px;color:var(--muted);margin:0}
+.notice{margin-top:22px;padding:17px 19px;border:1px solid #f5c75e44;background:#f5c75e0d;border-radius:15px;color:#d6dbea;font-size:12px}.contact-action{text-align:center}
+footer{border-top:1px solid var(--line);padding:25px 0;color:#91a0b7;font-size:12px}.foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}.foot strong{color:#eaf0fa}
+.fade{opacity:0;transform:translateY(15px);transition:.6s}.fade.show{opacity:1;transform:none}
+@media(max-width:900px){.cards{grid-template-columns:repeat(2,1fr)}.about-grid{grid-template-columns:1fr}.poster{max-width:650px;margin:auto}.steps{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:650px){.wrap{width:calc(100% - 28px)}.nav{height:66px}.menu{display:block}.hire.navhire{display:none}.links{display:none;position:absolute;top:66px;left:0;right:0;padding:17px 22px 21px;background:#0a1120;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:14px}.links.open{display:flex}.hero{padding:22px 0 50px}.cover{border-radius:15px}.cover img{min-height:190px;object-fit:cover}.hero-copy{margin:-12px auto 0}.hero p{font-size:14px}.trust{gap:10px}.trust span{font-size:10px}section{padding:55px 0}.cards,.video-grid{grid-template-columns:1fr}.card{min-height:0}.steps{grid-template-columns:1fr 1fr}.ticks{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.fade{opacity:1;transform:none;transition:none}*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="stripe"></div>
+<header><div class="wrap nav">
+  <a class="brand" href="#home"><img src="assets/anonymous-ph-profile.png" alt="Anonymous Philippines emblem"><span>ANONYMOUS PH<small>DIGITAL ASSISTANCE • PHILIPPINES</small></span></a>
+  <button class="menu" id="menu" aria-label="Open menu" aria-expanded="false">☰</button>
+  <nav class="links" id="links"><a href="#services">Services</a><a href="#about">About</a><a href="#proof">Client Proof</a><a href="#process">Process</a><a href="#contact">Contact</a></nav>
+  <a class="hire navhire" href="#contact">Hire Now! ↗</a>
+</div></header>
+<main id="home">
+<section class="hero"><div class="wrap">
+  <div class="cover fade"><img src="assets/anonymous-ph-cover.png" alt="Anonymous Philippines cyber-themed cover artwork"></div>
+  <div class="hero-copy fade"><span class="pill">🇵🇭 Serbisyong digital • Privacy • Security</span>
+    <h1>May digital concern ka?<br><span class="grad">Let's handle it responsibly.</span></h1>
+    <p>From account recovery guidance to ethical security testing and OSINT research — practical digital assistance, malinaw ang proseso, at privacy ang priority.</p>
+    <div class="actions"><a class="hire" href="#contact">Hire Now! ↗</a><a class="secondary" href="#services">Explore Services ↓</a></div>
+    <div class="trust"><span>Authorized requests only</span><span>Confidential approach</span><span>Honest assessment</span></div>
+  </div>
+</div></section>
+
+<section id="services"><div class="wrap"><div class="head fade"><span class="eyebrow">Our services / Mga serbisyo</span><h2>Digital support na <span class="grad">may malinaw na boundaries.</span></h2><p>We assess each request first. Walang magic promises — realistic options, proper authorization, at clear updates.</p></div>
+<div class="cards">
+<article class="card fade"><div class="ico">⌕</div><h3>Legit Tracing & OSINT</h3><p>Public-source research, scam/brand checks, digital footprint review, at pag-organize ng available evidence. Hindi kami nag-o-offer ng covert tracking o pagkuha ng private location.</p><span class="chip">Public & lawful sources only</span></article>
+<article class="card fade"><div class="ico">♻</div><h3>Account & Data Recovery</h3><p>Assistance sa recovery ng sarili mong account o files gamit ang official recovery process, account security checks, at safe troubleshooting.</p><span class="chip">Owner verification required</span></article>
+<article class="card fade"><div class="ico">⌘</div><h3>Ethical Hacking</h3><p>Authorized security testing para matukoy ang vulnerabilities sa website, app, o system na pagmamay-ari mo o may written permission kang i-test.</p><span class="chip">Written permission required</span></article>
+<article class="card fade"><div class="ico">⬡</div><h3>Cybersecurity Protection</h3><p>Security checkup, account/device hardening tips, phishing awareness, at practical steps para mas maprotektahan ang digital assets mo.</p><span class="chip">Protect & prevent</span></article>
+<article class="card fade"><div class="ico">◎</div><h3>Digital Footprint Check</h3><p>Review ng publicly visible information tungkol sa sarili mo o sa business mo, plus privacy recommendations para mabawasan ang unnecessary exposure.</p><span class="chip">Privacy-first review</span></article>
+<article class="card fade"><div class="ico">◈</div><h3>Scam & Fraud Evidence Support</h3><p>Tulong sa pag-document at pag-organize ng screenshots, links, timestamps, at public indicators para ma-report sa platform, provider, o proper authorities.</p><span class="chip">Evidence documentation</span></article>
+<article class="card fade"><div class="ico">⌁</div><h3>IP & Network Analysis</h3><p>Basic explanation ng IP/network indicators, logs, at kung ano lang talaga ang kayang sabihin ng technical data — kasama ang limitations nito.</p><span class="chip">No exact-location guarantees</span></article>
+<article class="card fade"><div class="ico">⚙</div><h3>Website Security Review</h3><p>Basic configuration review, security headers/checklist, exposed information review, at recommendations para sa website na authorized mong i-manage.</p><span class="chip">Site owner approval required</span></article>
+<article class="card fade"><div class="ico">✦</div><h3>Tech Support & Consultation</h3><p>One-on-one guidance para sa common digital issues, account safety, privacy settings, at next steps kapag may suspicious online activity.</p><span class="chip">Clear, practical guidance</span></article>
+</div></div></section>
+
+<section id="about"><div class="wrap about-grid">
+<div class="poster fade"><img src="assets/anonymous-ph-profile.png" alt="Anonymous-inspired Philippine flag profile emblem"></div>
+<div class="about fade"><span class="eyebrow">About Anonymous Philippines</span><h2>Tech knowledge. <span class="grad">Responsible action.</span></h2>
+<p>Our goal is to make digital security and technical assistance easier to understand. We approach every inquiry professionally: alamin muna ang concern, i-check ang authorization, then explain the safest available options.</p>
+<p>We respect privacy and applicable laws. Hindi kami nag-a-access ng accounts, devices, private messages, or networks without permission. We also don't claim guaranteed recovery, instant hacking, or 100% accurate person/location identification.</p>
+<div class="ticks"><div><b>✓</b> Clear scope bago magsimula</div><div><b>✓</b> Permission-based work</div><div><b>✓</b> Confidential handling</div><div><b>✓</b> Honest results & limits</div></div>
+</div></div></section>
+
+<section id="proof"><div class="wrap"><div class="head fade"><span class="eyebrow">Client proof</span><h2>Feedback from <span class="grad">past clients.</span></h2><p>Client-shared videos, published with permission. Select play to watch.</p></div>
+<div class="video-grid">
+<article class="video-card fade"><video controls preload="metadata" playsinline><source src="videos/1.mp4" type="video/mp4">Your browser does not support MP4 video.</video><h3>Client video 1</h3></article>
+<article class="video-card fade"><video controls preload="metadata" playsinline><source src="videos/2.mp4" type="video/mp4">Your browser does not support MP4 video.</video><h3>Client video 2</h3></article>
+<article class="video-card fade"><video controls preload="metadata" playsinline><source src="videos/3.mp4" type="video/mp4">Your browser does not support MP4 video.</video><h3>Client video 3</h3></article>
+<article class="video-card fade"><video controls preload="metadata" playsinline><source src="videos/4.mp4" type="video/mp4">Your browser does not support MP4 video.</video><h3>Client video 4</h3></article>
+<article class="video-card fade"><video controls preload="metadata" playsinline><source src="videos/5.mp4" type="video/mp4">Your browser does not support MP4 video.</video><h3>Client video 5</h3></article>
+<article class="video-card fade"><video controls preload="metadata" playsinline><source src="videos/6.mp4" type="video/mp4">Your browser does not support MP4 video.</video><h3>Client video 6</h3></article>
+<article class="video-card fade"><video controls preload="metadata" playsinline><source src="videos/7.mp4" type="video/mp4">Your browser does not support MP4 video.</video><h3>Client video 7</h3></article>
+</div></div></section>
+
+<section id="process"><div class="wrap"><div class="head fade"><span class="eyebrow">How it works / Paano ang process</span><h2>Simple, clear, <span class="grad">and transparent.</span></h2><p>Para alam mo kung ano ang possible, ano ang kailangan, at ano ang next step.</p></div>
+<div class="steps"><article class="step fade"><small>01 — INQUIRY</small><h3>Send your concern</h3><p>Ikwento ang issue. Please don't send passwords, OTPs, or sensitive credentials.</p></article><article class="step fade"><small>02 — VALIDATION</small><h3>Verify authorization</h3><p>We confirm ownership/permission and define the allowed scope.</p></article><article class="step fade"><small>03 — ASSESSMENT</small><h3>Review & explain</h3><p>We assess the available details and discuss realistic options and limitations.</p></article><article class="step fade"><small>04 — NEXT STEPS</small><h3>Receive guidance</h3><p>You get findings, recommendations, and a clear handoff or action plan.</p></article></div>
+<div class="notice"><strong>Important:</strong> All services are limited to lawful, consent-based work. No unauthorized account access, credential theft, malware, doxxing, stalking, private-location tracking, or attacks on third-party systems. “Tracing” means lawful public-source research and evidence review only.</div>
+</div></section>
+
+<section id="contact"><div class="wrap"><div class="head fade"><span class="eyebrow">Contact</span><h2>Want to <span class="grad">get in touch?</span></h2><p>Message me on Facebook.</p></div>
+<div class="contact-action fade"><a class="hire" href="https://www.facebook.com/hacker.for.hire.ph" target="_blank" rel="noopener noreferrer">Contact me on Facebook ↗</a></div></div></section>
+</main>
+<footer><div class="wrap foot"><div><strong>ANONYMOUS PHILIPPINES</strong> — Privacy • Security • Freedom</div><div>© <span id="year"></span> Independent service portfolio</div></div></footer>
+<script>
+const menu = document.querySelector("#menu"), links = document.querySelector("#links");
+menu.addEventListener("click",()=>{const open=links.classList.toggle("open");menu.setAttribute("aria-expanded",String(open));menu.textContent=open?"×":"☰";});
+links.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{links.classList.remove("open");menu.setAttribute("aria-expanded","false");menu.textContent="☰";}));
+document.querySelector("#year").textContent=new Date().getFullYear();
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add("show");observer.unobserve(e.target);}}),{threshold:.1});
+document.querySelectorAll(".fade").forEach(el=>observer.observe(el));
+</script>
+</body></html>
